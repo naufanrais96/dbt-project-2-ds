@@ -9,7 +9,7 @@ This project demonstrates how DBT (Data Build Tool) can effectively transform da
 - [Data Upload](#data-upload)
 - [Running DBT](#running-dbt)
 
-##setup
+## Setup
 
 1. **Create a Docker Compose Configuration**
    Create a `docker-compose.yml` file that includes:
@@ -19,7 +19,6 @@ This project demonstrates how DBT (Data Build Tool) can effectively transform da
 2. **Start the Container**
    docker-compose up -d
 
-##data-upload 
 3. **Data Upload**
    - Connect to the Database with DBeaver
       Open DBeaver and create a new connection using the following details:
@@ -31,7 +30,6 @@ This project demonstrates how DBT (Data Build Tool) can effectively transform da
 
   - Upload CSV Files into the Database
 
-##running-dbt
 4. **Running DBT**
    - Test DBT Environment
    docker-compose exec python bash -c "dbt debug --profile-dir ./ --project-dir ./"
